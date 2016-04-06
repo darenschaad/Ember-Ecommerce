@@ -3,7 +3,7 @@
 {{item-detail item=model delete='delete'}}
 
 {{#each model.comments as |comment|}}
-  {{comment-tile comment=comment}}
+  {{comment-tile comment=comment}} {{rating-display comment}}
 {{/each}}
 
 {{new-comment addComment="addComment" item=model}}

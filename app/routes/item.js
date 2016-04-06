@@ -4,6 +4,9 @@ export default Ember.Route.extend({
   model(params) {
     return this.store.findRecord('item', params.item_id);
   },
+  afterModel(model) {
+    return model.get('comments');
+  },
   actions: {
     delete(item) {
       item.destroyRecord();
@@ -23,8 +26,6 @@ export default Ember.Route.extend({
     addComment: function(params) {
       var newComment = this.store.createRecord('comment', params);
       var item = params.item;
-
-      debugger;
 
       item.get('comments').addObject(newComment);
       newComment.save().then(function() {
