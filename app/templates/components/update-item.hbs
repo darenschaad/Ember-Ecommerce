@@ -1,0 +1,30 @@
+{{#if updateItemForm}}
+  <h3>Update {{item.name}}'s properties</h3>
+  <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Item Name</label>
+          {{input value=item.name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          {{input value=item.description id="description"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          {{input value=item.image id="image"}}
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price</label>
+          {{input value=item.price id="price"}}
+        </div>
+        {{log item}}
+        <button class="btn btn-success" {{action 'update' item}}>Save Update</button>
+      </form>
+    </div>
+{{else}}
+    <button class="btn btn-info" {{action 'updateItemForm'}}>Update</button>
+{{/if}}

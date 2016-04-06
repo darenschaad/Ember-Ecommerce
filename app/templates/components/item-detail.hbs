@@ -1,0 +1,8 @@
+<div class="itemImage">
+
+  <img src={{item.image}} alt={{item.image}}/>
+</div>
+<h3>Description: {{item.description}}</h3>
+<h3>Price: ${{item.price}}</h3>
+
+<button class= "btn btn-danger" {{action 'delete' item}}>Delete Item</button>

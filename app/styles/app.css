@@ -1,0 +1,12 @@
+.jumbotron {
+  text-align: center;
+}
+.navbar {
+  margin-top: -30px;
+}
+.mainImage {
+  height: auto;
+  width: auto;
+  max-width: 300px;
+  max-height: 200px;
+}

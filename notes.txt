@@ -1,0 +1,1 @@
+We needed to add a store controller in order to inject the cart service into the Store route.

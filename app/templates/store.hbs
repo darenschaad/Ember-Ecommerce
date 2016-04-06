@@ -1,9 +1,11 @@
 {{#each model as |item|}}
-  {{item-tile item=item}}
+  {{item-tile item=item refresh='refresh'}}
 {{/each}}
 
 <h1>CART CONTENTS</h1>
-
 {{display-cart}}
+
+<h1>CART TOTAL</h1>
+{{cart-total cart.items cart.items.length}}
 
 {{log cart.items}}

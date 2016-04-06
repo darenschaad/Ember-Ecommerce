@@ -7,6 +7,8 @@ export default Ember.Component.extend({
     addToCart(item) {
       this.get('cart').add(item);
       console.log("CART:", this.get('cart.items'));
+      this.sendAction('refresh');
     },
+
   }
 });
