@@ -1,10 +1,13 @@
-{{#link-to 'item' item.id}}
-<h2>{{item.name}}</h2>
-<div >
+<div class="links">
+  {{#link-to 'item' item.id}}
+  <h2>{{item.name}}</h2>
+  <div >
 
-  <img class="mainImage" src={{item.image}} alt={{item.image}} />
+    <img class="mainImage" src={{item.image}} alt={{item.image}} />
+  </div>
+  <h3>Price: $ {{item.price}}</h3>
+  {{/link-to}}
 </div>
-<h3>Price: $ {{item.price}}</h3>
-{{/link-to}}
+
 <button class= "btn btn-primary" {{action 'addToCart' item}}>Add to Cart</button>
 <hr>

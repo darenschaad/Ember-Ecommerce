@@ -11,7 +11,7 @@ export function cartTotal(params/*, hash*/) {
     total += itemPrice
   }
 
-  return total;
+  return "$" + total;
 }
 
 export default Ember.Helper.helper(cartTotal);

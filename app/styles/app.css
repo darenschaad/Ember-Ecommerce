@@ -10,3 +10,12 @@
   max-width: 300px;
   max-height: 200px;
 }
+.container {
+  padding-bottom: 200px;
+}
+a:hover {
+  text-decoration: none;
+}
+.links a {
+  color: black;
+}
