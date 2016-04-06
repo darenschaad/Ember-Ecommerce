@@ -1,0 +1,10 @@
+<h1>New Comment</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="comment">Comment</label>
+      {{input class="form-control" value=comment id="comment"}}
+    </div>
+    <button class="btn btn-success" {{action 'addComment'}}>Add Comment</button>
+  </form>
+</div>

@@ -1,3 +1,9 @@
 <h2>More information about {{model.name}}</h2>
 {{update-item item=model update='update'}}
 {{item-detail item=model delete='delete'}}
+
+{{#each model.comments as |comment|}}
+  {{comment-tile comment=comment}}
+{{/each}}
+
+{{new-comment addComment="addComment" item=model}}
