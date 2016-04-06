@@ -1,0 +1,27 @@
+
+    <h1>New Item</h1>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="name">Item Name</label>
+          {{input class="form-control" value=name id="name"}}
+        </div>
+
+        <div class="form-group">
+          <label for="description">Item Description</label>
+          {{input class="form-control" value=description id="description"}}
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price</label>
+          {{input class="form-control" value=price id="price"}}
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image URL</label>
+          {{input class="form-control" value=image id="image"}}
+        </div>
+
+        <button class="btn btn-success" {{action 'save'}}>Save</button>
+      </form>
+    </div>
