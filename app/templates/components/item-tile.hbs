@@ -1,6 +1,6 @@
 {{item.name}}
 {{item.description}}
 {{item.price}}
-{{item.image}}
+<img src={{item.image}} alt={{item.image}} />
 
-<button {{action 'addToCart' item}}>Add to Cart</button>
+<button class= "btn btn-primary" {{action 'addToCart' item}}>Add to Cart</button>

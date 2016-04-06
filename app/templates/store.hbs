@@ -1,3 +1,9 @@
 {{#each model as |item|}}
   {{item-tile item=item}}
 {{/each}}
+
+<h1>CART CONTENTS</h1>
+
+{{display-cart}}
+
+{{log cart.items}}
