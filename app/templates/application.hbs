@@ -1,5 +1,9 @@
 <div class="jumbotron">
   <h1>E-Commerce</h1>
+  <div class="shoppingCart">
+    {{cart.items.length}}
+    <img class="shoppingCartImg" src="http://image005.flaticon.com/3/png/512/2/2772.png" alt="shopping cart logo" />
+  </div>
 </div>
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -22,6 +26,9 @@
           <li>{{#link-to "store"}}Store{{/link-to}}</li>
           {{/bs-dropdown-menu}}
           {{/bs-dropdown}}
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>{{#link-to "checkout"}}Checkout{{/link-to}}</li>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

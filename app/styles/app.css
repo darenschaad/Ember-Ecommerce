@@ -19,3 +19,13 @@ a:hover {
 .links a {
   color: black;
 }
+.shoppingCartImg {
+  height: auto;
+  width: auto;
+  max-width: 20px;
+  max-height: 20px;
+}
+.shoppingCart {
+  position: absolute;
+  right: 20px;
+}

@@ -7,7 +7,7 @@ export function cartTotal(params/*, hash*/) {
   var total = 0;
 
   for (var i = 0; i < cartItems.get('length'); i++) {
-    var itemPrice = cartItems.objectAt(i).get('price');
+    var itemPrice = parseInt(cartItems.objectAt(i).get('price'));
     total += itemPrice
   }
 
