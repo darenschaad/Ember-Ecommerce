@@ -2,7 +2,7 @@
 {{update-item item=model update='update'}}
 {{item-detail item=model delete='delete'}}
 
-{{#each model.comments as |comment|}}
+{{#each (sort model.comments) as |comment|}}
   {{comment-tile comment=comment}} {{rating-display comment}}
 {{/each}}
 

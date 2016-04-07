@@ -7,6 +7,7 @@ export default Ember.Route.extend({
   afterModel(model) {
     return model.get('comments');
   },
+
   actions: {
     delete(item) {
       item.destroyRecord();

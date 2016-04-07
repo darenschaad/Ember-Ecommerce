@@ -7,9 +7,10 @@ export default Ember.Component.extend({
       this.set('ratingForm', true);
     },
     addComment: function() {
+      var date = new Date()
       var params = {
         content: this.get('comment'),
-        date: Firebase.ServerValue.TIMESTAMP,
+        date: date.getTime(),
         item: this.get('item'),
         rating: parseInt(this.get('rating')),
       };
